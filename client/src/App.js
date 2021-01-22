@@ -9,9 +9,6 @@ import ApolloClient from 'apollo-boost';
 // import logo from './logo.svg';
 import './App.css';
 
-// get our fontawesome imports
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Imports from Pages/Components to build pages for Website
 import Home from "./pages/Home";
