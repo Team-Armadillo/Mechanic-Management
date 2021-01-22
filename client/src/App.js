@@ -12,7 +12,7 @@ import './App.css';
 // Imports from Pages/Components to build pages for Website
 import Home from "./pages/Home";
 // To use Redux-Store if we decide
-import store from "./utils/store";
+// import store from "./utils/store";
 
 const client = new ApolloClient({
   request: (operation) => {

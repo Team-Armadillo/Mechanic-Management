@@ -1,13 +1,12 @@
 const { Schema } = require('mongoose');
 
 const customerSchema = new Schema({
-  first: [
+  first:
     {
       type: String,
       required: true,
       trim: true, 
     },
-  ],
   last: {
     type: String,
     required: true,
@@ -19,7 +18,7 @@ const customerSchema = new Schema({
     trim: true, 
   },
   repair: {
-      type: Integer,
+      type: Number,
       trim: true, 
       min: 0, 
       default: 0,  

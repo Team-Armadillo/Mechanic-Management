@@ -2,11 +2,10 @@ const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
 // import schema from Book.js
-const bookSchema = require('./Customer');
+const customerSchema = require('./Customer');
 
 const userSchema = new Schema(
   {
-    
     email: {
       type: String,
       required: true,
@@ -17,6 +16,7 @@ const userSchema = new Schema(
     password: {
       type: String,
       required: true,
+      minlength: 12,
       trim: true, 
     },
     savedCustomers: [customerSchema],
@@ -44,9 +44,9 @@ userSchema.methods.isCorrectPassword = async function (password) {
   return bcrypt.compare(password, this.password);
 };
 
-// when we query a user, we'll also get another field called `Usercount` with the number of saved users/customers we have
+// when we query a user, we'll also get another field called `customerCount` with the number of saved users/customers we have
 userSchema.virtual('customerCount').get(function () {
-  return this.savedUsers.length;
+  return this.savedCustomers.length;
 });
 
 const User = model('User', userSchema);
