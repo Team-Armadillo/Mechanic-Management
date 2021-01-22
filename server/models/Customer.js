@@ -21,6 +21,8 @@ const customerSchema = new Schema({
   repair: {
       type: Integer,
       trim: true, 
+      min: 0, 
+      default: 0,  
   }
 });
 
