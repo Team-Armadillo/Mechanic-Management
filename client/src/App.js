@@ -1,24 +1,51 @@
-import logo from './logo.svg';
+// Global Dependencies
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { ApolloProvider } from '@apollo/react-hooks';
+import ApolloClient from 'apollo-boost';
+// import { Provider } from "react-redux";
+
+// Re-Use for possible new logo
+// import logo from './logo.svg';
 import './App.css';
+
+// Imports from Pages/Components to build pages for Website
+import Home from "./pages/Home";
+// To use Redux-Store if we decide
+import store from "./utils/store";
+
+const client = new ApolloClient({
+  request: (operation) => {
+    const token = localStorage.getItem('id_token')
+    operation.setContext({
+      headers: {
+        authorization: token ? `Bearer ${token}` : ''
+      }
+    })
+  },
+  uri: '/graphql',
+})
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApolloProvider client={client}>
+      <Router>
+        <div>
+        {/* <Provider store={store}> */}
+            {/* <Nav /> */}
+            <Switch>
+              <Route exact path="/" component={Home} />
+              {/* <Route exact path="/login" component={Login} />
+              <Route exact path="/signup" component={Signup} />
+              <Route exact path="/success" component={Success} />
+              <Route exact path="/orderHistory" component={OrderHistory} />
+              <Route exact path="/products/:id" component={Detail} /> */}
+              {/* <Route component={NoMatch} /> */}
+            </Switch>
+            {/* </Provider> */}
+        </div>
+      </Router>
+    </ApolloProvider>
   );
 }
 
