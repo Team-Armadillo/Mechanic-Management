@@ -33,8 +33,9 @@ module.exports = {
 
     return req;
   },
-  signToken: function ({ firstName, email, _id }) {
-    const payload = { firstName, email, _id };
+  // Added new Phone arg for phone number sign-in
+  signToken: function ({ firstName, phone, _id }) {
+    const payload = { firstName, phone, _id };
 
     return jwt.sign(
       { data: payload },
