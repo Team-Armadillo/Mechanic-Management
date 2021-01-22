@@ -1,7 +1,7 @@
 /*Desktop View*/
 .header {
     display: flex;
-    background: linear-gradient(#6616fc, #f394d3);
+    background: linear-gradient(#ff1e00, #ad380a);
     justify-content: space-between;
     align-items: center;
     padding: 0px 40px;
