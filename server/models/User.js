@@ -12,10 +12,12 @@ const userSchema = new Schema(
       required: true,
       unique: true,
       match: [/.+@.+\..+/, 'Must use a valid email address'],
+      trim: true, 
     },
     password: {
       type: String,
       required: true,
+      trim: true, 
     },
     savedCustomers: [customerSchema],
   },
