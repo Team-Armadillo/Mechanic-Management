@@ -20,19 +20,16 @@ const Header = () => {
 
         <ul className={click ? "nav-options active" : "nav-options"}>
           <li className="option" onClick={closeMobileMenu}>
-            <a href="#">ABOUT</a>
+            <a href="../pages/About.js">ABOUT</a>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <a href="#">CONTACT</a>
-          </li>
-          <li className="option" onClick={closeMobileMenu}>
-            <a href="#">BLOG</a>
+            <a href="../pages/Contact.js">CONTACT</a>
           </li>
           <li className="option mobile-option" onClick={closeMobileMenu}>
             <a href="#">SIGN-IN</a>
           </li>
           <li className=" option mobile-option" onClick={closeMobileMenu}>
-            <a href="" className="sign-up">
+            <a href="#" className="sign-up">
               SIGN-UP
             </a>
           </li>
@@ -40,10 +37,10 @@ const Header = () => {
       </div>
       <ul className="signin-up">
         <li className="sign-in" onClick={closeMobileMenu}>
-          <a href="#">SIGN-IN</a>
+          <a href="#" className="signin-btn ">SIGN-IN</a>
         </li>
         <li onClick={closeMobileMenu}>
-          <a href="" className="signup-btn">
+          <a href="#" className="signup-btn">
             SIGN-UP
           </a>
         </li>
