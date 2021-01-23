@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 const secret = 'mysecretsssss';
-const expiration = '2h';
+const expiration = '1h';
 
 module.exports = {
   authMiddleware: function ({ req }) {
@@ -33,8 +33,8 @@ module.exports = {
     return req;
   },
   // Added new Phone arg for phone number sign-in
-  signToken: function ({ firstName, phone, _id }) {
-    const payload = { firstName, phone, _id };
+  signToken: function ({ firstName, email, cellPhone, _id }) {
+    const payload = { firstName, email, cellPhone, _id };
 
     return jwt.sign(
       { data: payload },
