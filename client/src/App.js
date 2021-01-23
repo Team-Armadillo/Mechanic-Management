@@ -9,6 +9,7 @@ import ApolloClient from 'apollo-boost';
 // import logo from './logo.svg';
 import './App.css';
 
+
 // Imports from Pages/Components to build pages for Website
 import Home from "./pages/Home";
 // To use Redux-Store if we decide
