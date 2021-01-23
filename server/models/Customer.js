@@ -1,12 +1,13 @@
-const { Schema } = require('mongoose');
+const mongoose = require('mongoose');
+const { Schema } = mongoose;
+const Repair = require('./Repair');
 
 const customerSchema = new Schema({
-  first:
-    {
-      type: String,
-      required: true,
-      trim: true, 
-    },
+  first:{
+    type: String,
+    required: true,
+    trim: true, 
+  },
   last: {
     type: String,
     required: true,
@@ -18,11 +19,13 @@ const customerSchema = new Schema({
     trim: true, 
   },
   repair: {
-      type: Number,
-      trim: true, 
-      min: 0, 
-      default: 0,  
-  }
+    type: Number,
+    trim: true, 
+    min: 0, 
+    default: 0,  
+  },
+  repairs: [Repair.schema]
 });
 
-module.exports = customerSchema;
+const Customer = mongoose.model('Customer', customerSchema);
+module.exports = Customer;
