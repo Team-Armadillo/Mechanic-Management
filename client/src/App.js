@@ -1,5 +1,6 @@
 // Global Dependencies
 import React from "react";
+import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
@@ -12,6 +13,8 @@ import './App.css';
 
 // Imports from Pages/Components to build pages for Website
 import Home from "./pages/Home";
+import About from "./pages/About"
+import Contact from "./pages/Contact"
 // To use Redux-Store if we decide
 // import store from "./utils/store";
 
