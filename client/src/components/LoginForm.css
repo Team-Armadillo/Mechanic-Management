@@ -12,6 +12,12 @@ body {
     background-color: var(--bg-color) !important;
 }
 
+
+input:focus {
+  outline:none !important;
+  
+}
+
 form{
     height: 100vh;
     display: flex;
@@ -43,31 +49,27 @@ form{
 }
 
 
-h1 {
+.form-inner h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
 }
+
+.form-group label{
+  font-size: 14px;
+  cursor: text;
+}
+
+.form-group {
+  color: var(--text-color);
+  width: 300px;
+}
+
 
 form p {
     color: var(--text-secondary);
 }
 
-input:focus {
-  outline:none !important;
-  
-}
-
-.form-group label{
-    font-size: 14px;
-    cursor: text;
-}
-
-  .form-group {
-    color: var(--text-color);
-    width: 300px;
-  }
-  
-  .form-inner{
+.form-inner{
     display: flex;
     flex-direction: column;
     align-items: center;

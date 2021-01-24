@@ -15,10 +15,22 @@ const Dashlogin = () => {
     const Login = details => {
         console.log(details);
 
+        if (details.email == adminUser.email && details.password == adminUser.password)
+       {
+        console.log('were logged in');
+        setUser({
+            email: details.email
+        });
+
+        } else {
+            console.log("details do not match");
+        }
     }
+     
+
 
     const Logout = () => {
-        console.log("logout")
+        setUser({email:""});
     }
 
   return (
@@ -26,10 +38,10 @@ const Dashlogin = () => {
      {(user.email != "") ? (
          <div className="dashboard">
              <h2> welcome test</h2>
-             <button>Logout</button>
+             <button onClick={Logout}>Logout</button>
              </div>
      ) : (
-     <LoginForm/>)}
+     <LoginForm Login={Login} error={error}/>)}
     </div>
   );
 }
