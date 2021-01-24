@@ -2,6 +2,24 @@
     --primary: #FFF;
 }
 
+
+
 .btn {
-    padding: 20px
+    margin-top: 20px;
+    padding: 8px 120px 8px 120px;
+    border: solid 2px #F9F6ED;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #F9F6ED;
+    color: #1170D1;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }

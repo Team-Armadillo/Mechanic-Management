@@ -1,55 +1,71 @@
+body {
+    background-color: #F9F6ED !important;
+}
+
 form{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
 
 
 .form-group input {
-    width: 250px;
+    width: 100%;
     font-family: inherit;
     border: 0;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid rgb(240, 240, 240);
     outline: 0;
     font-size: 1.3rem;
     color: white;
-    padding: 8px 0;
     background: transparent;
-    transition: all 0.3s ease-in-out;
   
 }
 
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+
+p {
+    color: #d8dff2;
+}
+
+input:focus {
+  outline:none !important;
+}
+
 .form-group label{
-    padding: 12px;
-    font-size: 12px;
+    font-size: 14px;
     cursor: text;
 }
 
 
-
-.form-group {
-    --input-default-border-color: white;
-    --input-border-bottom-color: white;
-  }
   .form-group {
     color: white;
-
+    width: 300px;
   }
   
   .form-inner{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 40px;
+    padding: 50px 60px;
     color: white;
-    background: rgba(0, 0, 0, 0.8);
+    background: #1170D1;
     border-radius: 10px;
     
     box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109), 0 1px 1px rgba(128, 128, 128, 0.155), 0 2.1px 2.1px rgba(128, 128, 128, 0.195), 0 4.4px 4.4px rgba(128, 128, 128, 0.241), 0 12px 12px rgba(128, 128, 128, 0.35);
   }
+.form-inner input:focus{
+  color: #f5f5f5;
+}
+
   .form-inner h3 {
-    margin: 0 0 24px 0;
+    margin: 0 0 10px 0;
+   color: #042976;
   }
   .form-inner .form-group {
     margin: 12px 0;
