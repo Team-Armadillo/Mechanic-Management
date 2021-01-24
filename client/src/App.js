@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
+
 // import { Provider } from "react-redux";
 
 // Re-Use for possible new logo
@@ -13,6 +14,8 @@ import './App.css';
 // Imports from Pages/Components to build pages for Website
 import Home from "./pages/Home";
 import Dashlogin from './pages/Dashlogin';
+
+
 // To use Redux-Store if we decide
 import store from "./utils/store";
 
@@ -35,9 +38,12 @@ function App() {
         <div>
         {/* <Provider store={store}> */}
             {/* <Nav /> */}
+         
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path='/login' exact component= {Dashlogin}/>
+              <Route path='/login' component= {Dashlogin}/>
+
+
               {/* <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/success" component={Success} />

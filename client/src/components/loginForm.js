@@ -1,13 +1,31 @@
 import React from 'react';
+import LoginBtn from './LoginBtn';
 
-function loginForm() {
+
+
+function LoginForm() {
     return (
        <form>
-        
-           <h2>Mecanico</h2>
+           <div className= "form-inner">
+           <h1>Mecanico</h1>
+           <h3>Dashboard Login</h3>
+           {/*error*/}
 
+           <div className="form-group">
+               <label htmlFor="email">Email: </label>
+               <input type="email" name="email" id="email"/>
+               </div>
+
+               <div className="form-group">
+               <label htmlFor="password">Password: </label>
+               <input type="password" name="password" id="password"></input>
+               </div>
+
+               <LoginBtn/>
+
+        </div>
        </form>
     )
-}
+};
 
-export default loginForm
+export default LoginForm

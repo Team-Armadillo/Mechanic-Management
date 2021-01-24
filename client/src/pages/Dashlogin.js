@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LoginForm from '../components/LoginForm';
 
 
 
@@ -27,9 +28,10 @@ const Dashlogin = () => {
              <h2> welcome test</h2>
              <button>Logout</button>
              </div>
-     ): (<LoginForm/>)}
+     ) : (
+     <LoginForm/>)}
     </div>
   );
-};
+}
 
 export default Dashlogin;
