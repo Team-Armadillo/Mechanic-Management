@@ -39,9 +39,13 @@ const typeDefs = gql`
     repairs: [Repair]
   }
 
+  type Checkout {
+    session: ID
+  }
+
   type Query {
-    user: User
-    customer: Customer
+    user: [User]
+    customer: [Customer]
     parts(name: String): [Part]
     repair(_id: ID!): Repair
     part(_id: ID!): Part
@@ -53,15 +57,13 @@ const typeDefs = gql`
     updateUser(email: String, password: String): User
     login(email: String!, password: String!): Auth
     checkIn(cellPhone: String!): Customer
-    addCustomer(firstName: String!, lastName: String!, cellPhone: String!): Customer
+    addCustomer(userId: ID!, firstName: String!, lastName: String!, cellPhone: String!): Auth
     updateCustomer(firstName: String, lastName: String, cellPhone: String): Customer
     addRepair(parts: [ID]!): Repair
+    addPart(customerID: ID!, name: String!, description: String!, price: Float!, quantity: Int!): Part
     updatePart(_id: ID!, quantity: Int!): Part
   }
 
-  type Checkout {
-    session: ID
-  }
 `;
 
 // export the typeDefs

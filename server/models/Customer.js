@@ -3,12 +3,12 @@ const { Schema } = mongoose;
 const Repair = require('./Repair');
 
 const customerSchema = new Schema({
-  first:{
+  firstName:{
     type: String,
     required: true,
     trim: true, 
   },
-  last: {
+  lastName: {
     type: String,
     required: true,
     trim: true, 
@@ -28,4 +28,5 @@ const customerSchema = new Schema({
 });
 
 const Customer = mongoose.model('Customer', customerSchema);
+
 module.exports = Customer;
