@@ -1,25 +1,20 @@
-:root {
-    --primary: #FFF;
-}
-
-
 
 .btn {
     margin-top: 20px;
-    padding: 8px 120px 8px 120px;
-    border: solid 2px #F9F6ED;
+    padding: 8px 60px 8px 60px;
+    border: solid 2px var(--text-color);
     background-color: transparent;
     font-size: 14px;
     font-weight: bold;
-    color: #fff;
+    color: var(--text-color);
     border-radius: 6px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .btn:hover{
-    background-color: #F9F6ED;
-    color: #1170D1;
+    background-color: var(--text-color);
+    color: var(--bg-color-secondary);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
