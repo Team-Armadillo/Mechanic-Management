@@ -18,6 +18,7 @@ import Dashlogin from './pages/Dashlogin';
 
 // To use Redux-Store if we decide
 import store from "./utils/store";
+import Dashboard from "./pages/Dashboard";
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -41,7 +42,9 @@ function App() {
          
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path='/login' component= {Dashlogin}/>
+              <Route path='/Dashboard' component= {Dashlogin}/>
+        
+
 
 
               {/* <Route exact path="/login" component={Login} />

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import LoginForm from '../components/LoginForm';
+import Dashboard from "../pages/Dashboard";
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 
@@ -23,7 +25,8 @@ const Dashlogin = () => {
         });
 
         } else {
-            console.log("details do not match");
+            console.log("details do not match")
+            setError("invalid email & password");
         }
     }
      
@@ -36,10 +39,11 @@ const Dashlogin = () => {
   return (
     <div className="container">
      {(user.email != "") ? (
-         <div className="dashboard">
-             <h2> welcome test</h2>
-             <button onClick={Logout}>Logout</button>
-             </div>
+       <div className="dashboard">
+        <Route exact component= {Dashboard}/>
+    
+       <button onClick={Logout}>Logout</button>
+       </div>
      ) : (
      <LoginForm Login={Login} error={error}/>)}
     </div>

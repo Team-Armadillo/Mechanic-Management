@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from "react";
+
 import LoginBtn from './LoginBtn';
 import './LoginForm.css';
 
@@ -17,7 +18,8 @@ function LoginForm({Login, error}) {
            <div className= "form-inner">
            <h1>mecanico</h1>
            <p>admin dashboard</p>
-           {/*error*/}
+           
+           {(error != "") ? (<div className="error">{error}</div>) : ""}
 
            <div className="form-group">
                <label htmlFor="email" >Email: </label>
