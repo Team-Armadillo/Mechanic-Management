@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import ReactDOM from 'react-dom'
+import "./SignInForm.css";
 
-const SignInForm= () => {
+const SignInForm = () => {
 
     return(
        <div className="container">
@@ -27,8 +28,8 @@ const SignInForm= () => {
 </div>
  <button type="button" className="btn btn-secondary btn-block">LOGIN</button>
  <div className="message">
-<div><input type="checkbox" /> Remember ME</div>
- <div><a href="#">Forgot your password</a></div>
+<div><input type="checkbox" /> Remember Me!</div>
+ <div><a href="#">Forgot your password?</a></div>
  </div>
    </form>
           </div>
@@ -36,4 +37,5 @@ const SignInForm= () => {
        </div>   
     )
   };
+
 export default SignInForm;
