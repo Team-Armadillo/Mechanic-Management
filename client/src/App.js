@@ -43,6 +43,8 @@ function App() {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path='/Dashboard' component= {Dashlogin}/>
+              <Route path='/Dashboardtest' component= {Dashboard}/>
+              
         
 
 

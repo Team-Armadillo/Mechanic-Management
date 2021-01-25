@@ -19,7 +19,7 @@ function LoginForm({Login, error}) {
            <h1>mecanico</h1>
            <p>admin dashboard</p>
            
-           {(error != "") ? (<div className="error">{error}</div>) : ""}
+           {(error !== "") ? (<div className="error">{error}</div>) : ""}
 
            <div className="form-group">
                <label htmlFor="email" >Email: </label>

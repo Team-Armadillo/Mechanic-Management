@@ -17,7 +17,7 @@ const Dashlogin = () => {
     const Login = details => {
         console.log(details);
 
-        if (details.email == adminUser.email && details.password == adminUser.password)
+        if (details.email === adminUser.email && details.password === adminUser.password)
        {
         console.log('were logged in');
         setUser({

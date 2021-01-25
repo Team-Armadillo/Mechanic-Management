@@ -1,11 +1,27 @@
-import React from 'react'
+import React from 'react';
+import {useState} from 'react';
+import "./Dashboard.css";
+import Dashnav from '../components/Dashnav';
+import Sidebar from '../components/Sidebar';
 
-function Dashboard() {
+
+const Dashboard = () =>  {
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+
+    const openSidebar = () => {
+        setSidebarOpen(true);
+    }
+
+    const closeSidebar = () => {
+        setSidebarOpen(false);
+    }
+
     return (
 
-        
-        <div>
-            <h2>shalom</h2>
+        <div className="dashcontainer">
+            <Dashnav sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
+            <h1>main</h1>
+            <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar}/>
            
         </div>
     )

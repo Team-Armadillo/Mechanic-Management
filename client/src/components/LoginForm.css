@@ -19,12 +19,11 @@ input:focus {
 }
 
 form{
-    height: 100vh;
+    height: 100vh !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
+
   }
 
     
@@ -37,7 +36,7 @@ form{
     border-bottom: 2px solid var(--text-color);
     outline: 0;
     font-size: 14px;
-    padding:7px;
+    padding:7px !important;
     color: var(--text-color);
     background: transparent;
     transition: all 0.3s ease-in-out;
@@ -76,7 +75,7 @@ form p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 60px;
+    padding: 50px 60px !important;
     color:var(--text-color);
     background:var(--bg-color-secondary);
     border-radius: 10px;
@@ -85,14 +84,15 @@ form p {
 
 
   .form-inner h3 {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px 0 !important;
   }
   .form-inner .form-group {
-    margin: 12px 0;
+    margin: 12px 0 !important;
+
   }
   .login-form .btn {
     width: 100%;
-    margin: 18px 0 9px 0;
+    margin: 18px 0 9px 0 !important;
   }
 .error{
   color: #ed4545;
