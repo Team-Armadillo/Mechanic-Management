@@ -4,6 +4,14 @@ import { ReactComponent as MenuIcon } from "../assets/menu.svg";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 import "./header.css";
 
+// imports for react router
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 const Header = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -20,10 +28,10 @@ const Header = () => {
 
         <ul className={click ? "nav-options active" : "nav-options"}>
           <li className="option" onClick={closeMobileMenu}>
-            <a href="../pages/About.js">ABOUT</a>
+            <Link to="../pages/About.js">ABOUT</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <a href="../pages/Contact.js">CONTACT</a>
+           <Link to="../pages/contact.js">CONTACT</Link>
           </li>
           <li className="option mobile-option" onClick={closeMobileMenu}>
             <a href="#">SIGN-IN</a>
