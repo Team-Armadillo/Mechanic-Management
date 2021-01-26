@@ -18,12 +18,11 @@ input:focus {
   
 }
 
-form{
+.adminform{
     height: 100vh !important;
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
     
@@ -96,5 +95,7 @@ form p {
   }
 .error{
   color: #ed4545;
+  padding:10px !important;
+
 
 }
