@@ -8,9 +8,7 @@ const Home = () => {
     <div className="container">
       <Navbar />
       <p>Welcome to Mechanic-Management!</p>
-      
       { < SignInForm />}
-
     </div>
   );
 };
