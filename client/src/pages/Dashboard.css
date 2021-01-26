@@ -29,6 +29,10 @@ body {
     box-sizing: border-box;
 }
 
+.test {
+    padding:20px!important;
+}
+
 .dashcontainer {
     display: grid;
     height: 100vh;

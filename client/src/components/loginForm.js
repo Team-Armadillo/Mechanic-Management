@@ -14,7 +14,7 @@ function LoginForm({Login, error}) {
 
 
     return (
-       <form onSubmit={submitHandler}>
+       <form className="adminform" onSubmit={submitHandler}>
            <div className= "form-inner">
            <h1>mecanico</h1>
            <p>admin dashboard</p>
