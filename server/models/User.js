@@ -1,4 +1,5 @@
-const { Schema, model } = require('mongoose');
+const mongoose = require('mongoose');
+const { Schema } = mongoose;
 const bcrypt = require('bcrypt');
 const customerSchema = require('./Customer')
 
@@ -18,7 +19,7 @@ const userSchema = new Schema(
       trim: true, 
     },
     savedCustomers: {
-      customerSchema
+     type: {customerSchema}
     },
     customers: [{
       type: Schema.Types.ObjectId,
@@ -55,6 +56,6 @@ userSchema.virtual('customerCount').get(function () {
   return this.savedCustomers.length;
 });
 
-const User = model('User', userSchema);
+const User = mongoose.model('User', userSchema);
 
 module.exports = User;
