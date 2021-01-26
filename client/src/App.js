@@ -13,6 +13,7 @@ import './App.css';
 
 // Imports from Pages/Components to build pages for Website
 import Home from "./pages/Home";
+// import Admin from "./pages/Admin";
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 // To use Redux-Store if we decide
@@ -39,6 +40,7 @@ function App() {
             {/* <Nav /> */}
             <Switch>
               <Route exact path="/" component={Home} />
+              {/* <Route exact path="/admin" component={Admin} /> */}
               {/* <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/success" component={Success} />

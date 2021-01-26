@@ -24,6 +24,7 @@ const customerSchema = new Schema({
     min: 0, 
     default: 0,  
   },
+
   repairs: [Repair.schema]
 });
 
