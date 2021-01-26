@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
+
 // import { Provider } from "react-redux";
 
 // Re-Use for possible new logo
@@ -13,6 +14,8 @@ import './App.css';
 
 // Imports from Pages/Components to build pages for Website
 import Home from "./pages/Home";
+import Dashlogin from './pages/Dashlogin';
+import Dashboard from './pages/Dashboard';
 // import Admin from "./pages/Admin";
 import About from "./pages/About"
 import Contact from "./pages/Contact"
@@ -41,6 +44,8 @@ function App() {
             <Switch>
               <Route exact path="/" component={Home} />
               {/* <Route exact path="/admin" component={Admin} /> */}
+              <Route path='/Dashboard' component= {Dashlogin}/>
+              {<Route path='/Dashboardtest' component= {Dashboard}/>}
               {/* <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/success" component={Success} />

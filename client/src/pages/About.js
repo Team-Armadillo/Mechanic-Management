@@ -9,6 +9,6 @@ const About = () => {
         <p>Welcome to Mechanic-Management About page!</p>
       </div>
     );
-  };
-  
-  export default About;
+};
+
+export default About;
