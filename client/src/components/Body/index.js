@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Body.scss"
 import Navbar from "../Navbar";
+import Footer from "../Footer"
 
 const Body = () => {
     return (
@@ -21,6 +22,7 @@ const Body = () => {
                     </div>
                 </div>
             </div>
+            {/* <Footer />  */}
         </div>
     )
 };
