@@ -2,7 +2,7 @@
 
   
   ## Description
-
+    Mechanic Management is an application that helps individuals to check in and check out their vehicles in a mechanic workshop. It enables vehicle owners to keep track of their vehicles in the mechanic workshop and helps mechanics to keep track of their inventory and invoices.
  
 
   > EX: This PWA if Offline, will [POST](https://www.w3schools.com/tags/ref_httpmethods.asp) the new data inputed by the user once the Application gets online to ensure it reaches the MongoDB.
