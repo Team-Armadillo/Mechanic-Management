@@ -38,7 +38,7 @@ const Dashlogin = () => {
 
   return (
     <div className="container">
-     {(user.email != "") ? (
+     {(user.email !== "") ? (
        <div className="dashboard">
         <Route exact component= {Dashboard}/>
     

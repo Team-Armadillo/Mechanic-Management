@@ -10,6 +10,8 @@
 
 body {
     background-color: var(--bg-color) !important;
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 1px;
 }
 
 

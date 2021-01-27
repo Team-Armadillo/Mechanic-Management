@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
 const Sidebar = ({ sidebarOpen, closeSidebar}) => {
@@ -11,20 +12,21 @@ const Sidebar = ({ sidebarOpen, closeSidebar}) => {
 
             <div className="sidebar-menu">
                 <div className="sidebar-links active-menu-link">
-                    <i className="fa fa-clipboard"></i>
-                    <a href="#">Check-ins</a>
+        
+                    
+                <Link to='/Dashboard'> <i className="fa fa-clipboard"></i>Check-ins</Link>
                     </div>
                     
                     <div className="sidebar-links">
-                    <i className="fa fa-users"></i>
-                    <a href="#">Patrons</a>
+                   
+                    <Link to='/Patrons'><i className="fa fa-users"></i>Patrons</Link>
                     </div>
 
                     <div className="sidebar-links">
-                    <i className="fa fa-sign-out"></i>
-                    <a href="#">Log out</a>
+                    
+                    <a href="#"><i className="fa fa-sign-out"></i>Log out</a>
                     </div>
-
+                    
                 
 
             </div>
