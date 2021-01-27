@@ -1,14 +1,11 @@
 import React, { useState } from "react";
-import ReactDOM from 'react-dom'
-import Navbar from "../components/Navbar.js";
-import SignInForm from "../components/SignInForm.js"
+// import ReactDOM from 'react-dom'
+import Body from "../components/Body"
 
 const Home = () => {
   return (
-    <div className="container">
-      <Navbar />
-      <p>Welcome to Mechanic-Management!</p>
-      { < SignInForm />}
+    <div>
+        <Body />
     </div>
   );
 };

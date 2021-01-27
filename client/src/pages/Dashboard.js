@@ -3,7 +3,7 @@ import {useState} from 'react';
 import "./Dashboard.css";
 import Dashnav from '../components/Dashnav';
 import Sidebar from '../components/Sidebar';
-import Checkins from '../components/Checkins'
+import Checkins from '../components/Checkins';
 
 const Dashboard = () =>  {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -20,7 +20,7 @@ const Dashboard = () =>  {
 
         <div className="dashcontainer">
             <Dashnav sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
-            <Checkins/>
+            <Checkins />
             <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar}/>
            
         </div>

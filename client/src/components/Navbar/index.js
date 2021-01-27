@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { ReactComponent as CloseMenu } from "../assets/x.svg";
-import { ReactComponent as MenuIcon } from "../assets/menu.svg";
-import { ReactComponent as Logo } from "../assets/logo.svg";
-import "./header.css";
+import { ReactComponent as CloseMenu } from "../../assets/x.svg";
+import { ReactComponent as MenuIcon } from "../../assets/menu.svg";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
+import "./navbar.css";
 
 // imports for react router
 import {
@@ -21,38 +21,22 @@ const Header = () => {
     <div className="header">
       <div className="logo-nav">
         <div className="logo-container">
-          <a href="#">
+          <a href="/">
             <Logo className="logo" />
           </a>
         </div>
-
         <ul className={click ? "nav-options active" : "nav-options"}>
           <li className="option" onClick={closeMobileMenu}>
-            <Link to="../pages/About.js">ABOUT</Link>
+            <Link to="../pages/Services">Services</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-           <Link to="../pages/contact.js">CONTACT</Link>
+            <Link to="../pages/About">About</Link>
           </li>
-          <li className="option mobile-option" onClick={closeMobileMenu}>
-            <a href="#">SIGN-IN</a>
-          </li>
-          <li className=" option mobile-option" onClick={closeMobileMenu}>
-            <a href="#" className="sign-up">
-              SIGN-UP
-            </a>
+          <li className="option" onClick={closeMobileMenu}>
+           <Link to="../pages/contact">Contact</Link>
           </li>
         </ul>
       </div>
-      <ul className="signin-up">
-        <li className="sign-in" onClick={closeMobileMenu}>
-          <a href="#" className="signin-btn ">SIGN-IN</a>
-        </li>
-        <li onClick={closeMobileMenu}>
-          <a href="#" className="signup-btn">
-            SIGN-UP
-          </a>
-        </li>
-      </ul>
       <div className="mobile-menu" onClick={handleClick}>
         {click ? (
           <CloseMenu className="menu-icon" />

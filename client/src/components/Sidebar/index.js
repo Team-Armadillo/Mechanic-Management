@@ -7,26 +7,24 @@ const Sidebar = ({ sidebarOpen, closeSidebar}) => {
             <div className="brand">
                 <h1>mecanico</h1>
             </div>
+            
             <i className="fa fa-times" id="sidebarIcon" onClick={() => closeSidebar()}></i>
 
             <div className="sidebar-menu">
                 <div className="sidebar-links active-menu-link">
                     <i className="fa fa-clipboard"></i>
                     <a href="#">Check-ins</a>
-                    </div>
+                </div>
                     
-                    <div className="sidebar-links">
+                <div className="sidebar-links">
                     <i className="fa fa-users"></i>
                     <a href="#">Patrons</a>
-                    </div>
+                </div>
 
-                    <div className="sidebar-links">
+                <div className="sidebar-links">
                     <i className="fa fa-sign-out"></i>
                     <a href="#">Log out</a>
-                    </div>
-
-                
-
+                </div>
             </div>
         </div>
 
@@ -34,4 +32,3 @@ const Sidebar = ({ sidebarOpen, closeSidebar}) => {
 }
 
 export default Sidebar
-

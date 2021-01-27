@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar.js";
+import { ReactComponent as Logo } from "../assets/logo.svg";
 
 const Contact = () => {
     return (
       <div className="container">
-        <Navbar />
-        <p>Welcome to Mechanic-Management Contact Page!</p>
+        <a href="/">
+            <Logo className="logo" />
+          </a>
+        <p>Contact Us!</p>
       </div>
     );
   };

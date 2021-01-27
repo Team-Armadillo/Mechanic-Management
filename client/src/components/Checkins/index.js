@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from "react";
-import "../components/Checkins.css"
+import "./Checkins.css"
 
-function Checkins({Login, error}) {
-    const [details, setDetails] = useState({firstname:"", lastname:"", tel:""});
+const Checkins = ({Login, error}) => {
+    const [details, setDetails] = useState({firstname:"", lastname:"", cellPhone:""});
         const submitHandler = e => {
             e.preventDefault();
            console.log(details)
@@ -45,4 +45,4 @@ function Checkins({Login, error}) {
     )
 }
 
-export default Checkins
+export default Checkins;

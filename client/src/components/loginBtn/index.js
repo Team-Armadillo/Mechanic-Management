@@ -3,7 +3,7 @@ import './loginBtn.css';
 
 function loginBtn() {
     return (
-        <input class= "btn" type="submit" value="Log In"/>
+        <input className= "btn" type="submit" value="Log In"/>
     )
 }
 

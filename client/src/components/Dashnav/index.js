@@ -1,5 +1,5 @@
 import React from 'react'
-import "../components/Dashnav.css"
+import "./Dashnav.css"
 
 const Dashnav = ({ sidebarOpen, closeSidebar, openSidebar}) => {
     return (
@@ -16,7 +16,3 @@ const Dashnav = ({ sidebarOpen, closeSidebar, openSidebar}) => {
     )
 }
 export default Dashnav
-
-
-
-
