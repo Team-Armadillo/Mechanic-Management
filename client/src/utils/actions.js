@@ -1,7 +1,8 @@
 //global state variables for products and categories
+export const ADD_USER = "ADD_USER";
+// export const UPDATE_USER = "UPDATE_USER";
 export const ADD_CUSTOMER = "ADD_CUSTOMER";
 export const UPDATE_CUSTOMER = "UPDATE_CUSTOMER";
-// export const UPDATE_USER = "UPDATE_USER";
 export const UPDATE_CURRENT_STATUS = "UPDATE_CURRENT_STATUS";
 
 // Invoice/Part "technically adding to a cart" variables

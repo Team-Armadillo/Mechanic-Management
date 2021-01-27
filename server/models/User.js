@@ -16,7 +16,7 @@ const userSchema = new Schema(
       type: String,
       required: true,
       minlength: 12,
-      trim: true, 
+      trim: true,
     },
     savedCustomers: {
      type: {customerSchema}
@@ -25,8 +25,6 @@ const userSchema = new Schema(
       type: Schema.Types.ObjectId,
       ref: 'User'
     }]
-
-    // .populate
   },
   // set this to use virtual below
   {
