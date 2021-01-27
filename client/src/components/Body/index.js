@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Body.css"
+import "./Body.scss"
 import Navbar from "../Navbar";
 
 const Body = () => {
@@ -9,26 +9,21 @@ const Body = () => {
             <Navbar />
             <div className = "bodyText">
                 <h1 className="section-head">Welcome to Mechanic Management!</h1>
-                <div className = "paraContainer">
-                    <p className="paraText">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
                 <h2 className="section-head-2">Checking Your Vehicle's Status?</h2>
                 <div className = "paraContainer">
                     <p className="paraText">
-                        A Click Away.
+                       <i> It's a Click Away. </i>
                     </p>
-                    <button className="checkBtn">
-                        Check Status
-                    </button>
+                    <div className="btnContainer">
+                        <button className="checkBtn">
+                           <p>Check Status!</p>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-       
     )
-}
+};
 
 export default Body;
 

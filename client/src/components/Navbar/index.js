@@ -21,7 +21,7 @@ const Header = () => {
     <div className="header">
       <div className="logo-nav">
         <div className="logo-container">
-          <a href="/">
+          <a className="mech" href="/">
             <Logo className="logo" />
           </a>
         </div>
