@@ -17,6 +17,7 @@ body {
     margin: 2% 20%;
     border: black 2px solid;
     border-radius:  10px;
+    background-color: rgb(232, 232, 236);
 }
 
 .paraContainer {
@@ -37,6 +38,11 @@ body {
     margin-left: 8%;
     pointer-events: none;
     margin-top: 10px;
+}
+.checkBtn {
+    background-color: lightblue;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .section-head-2 {
