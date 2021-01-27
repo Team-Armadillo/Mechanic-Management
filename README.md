@@ -34,9 +34,9 @@ Example:
   ![screenshot]()
   
   ## Technologies
-  - Javascript
-  - HTML/CSS
-  - Node.js
+- Javascript
+- HTML/CSS
+- Node.js
   
   ## License
   This Project is licensed via MIT
@@ -50,4 +50,6 @@ Example:
   - [Email] (octaviogarciapc@gmail.com)
   - [Email] (b.mccoolpierce@gmail.com)
   - [Email] (adaobi.okoye@ttuhsc.edu)
+
+# Mechanic-Management
 
