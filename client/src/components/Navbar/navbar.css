@@ -46,6 +46,15 @@
   .option :hover {
     color: white;
   }
+  .option {
+    border-radius: 25px;
+    margin: 5px;
+  background: rgb(232, 232, 236);
+ padding-left: 20px;
+  text-align: center;
+  text-decoration: none;
+ 
+  }
   .signin-up {
     display: flex;
     padding: 0px 5px;
