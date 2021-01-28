@@ -8,6 +8,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar}) => {
             <div className="brand">
                 <h1>mecanico</h1>
             </div>
+            
             <i className="fa fa-times" id="sidebarIcon" onClick={() => closeSidebar()}></i>
 
             <div className="sidebar-menu">
@@ -36,4 +37,3 @@ const Sidebar = ({ sidebarOpen, closeSidebar}) => {
 }
 
 export default Sidebar
-

@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-
-
+// import ReactDOM from 'react-dom'
+import Body from "../components/Body"
 
 const Home = () => {
   return (
-    <div className="container">
-      
-      <p>Welcome to Mechanic-Management!</p>
+    <div>
+        <Body />
     </div>
   );
 };

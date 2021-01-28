@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 
-import LoginBtn from './LoginBtn';
+import LoginBtn from '../loginBtn';
 import './LoginForm.css';
 
 function LoginForm({Login, error}) {
@@ -16,8 +16,8 @@ function LoginForm({Login, error}) {
     return (
        <form className="adminform" onSubmit={submitHandler}>
            <div className= "form-inner">
-           <h1>mecanico</h1>
-           <p>admin dashboard</p>
+           <h1>Mecanico</h1>
+           <p>Admin Dashboard</p>
            
            {(error !== "") ? (<div className="error">{error}</div>) : ""}
 
@@ -32,7 +32,6 @@ function LoginForm({Login, error}) {
                </div>
 
                <LoginBtn/>
-
         </div>
        </form>
     )

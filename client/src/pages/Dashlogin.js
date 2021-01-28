@@ -3,8 +3,6 @@ import LoginForm from '../components/LoginForm';
 import Dashboard from "../pages/Dashboard";
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-
-
 const Dashlogin = () => {
     const adminUser = {
         email: "admin@admin",
