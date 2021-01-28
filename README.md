@@ -31,7 +31,7 @@ Example:
     > EX: http://localhost:3000/
     
     ## Screenshots
-  ![screenshot]()
+  ![screenshot](https://github.com/Team-Armadillo/Mechanic-Management/blob/main/mechanic-management.png)
   
   ## Technologies
 - Javascript
