@@ -17,9 +17,8 @@ import Dashboard from './pages/Dashboard';
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Services from "./pages/Services"
-import Checkstatus from"./pages/Checkstatus"
-// To use Redux-Store if we decide
-// import store from "./utils/store";
+import DashSign from "./pages/DashSign"
+
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -45,10 +44,11 @@ function App() {
               <Route exact path='/pages/About' component={About} />
               <Route exact path="/pages/Services" component={Services} />
               <Route exact path="/pages/Contact" component={Contact} />
-              <Route exact path="/pages/Checkstatus" component={Checkstatus} />
+              
              {/* <Route exact path="/pages/Status" component={Status} />*/}
               <Route exact path='/f9MecEJ2vtKaYM3rEh48' component= {Dashlogin} />
               <Route exact path='/t01ZUNtMmCdpJdMX71hI' component= {Dashboard} />
+              <Route exact path='/KuceCU3bbD3EmURTEwty' component= {DashSign} />
               {/* <Route exact path="/signup" component={Signup} />
               <Route exact path="/success" component={Success} />
               <Route exact path="/orderHistory" component={OrderHistory} />

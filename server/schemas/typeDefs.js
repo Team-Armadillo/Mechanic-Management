@@ -36,6 +36,9 @@ const typeDefs = gql`
     firstName: String
     lastName: String
     cellPhone: String
+    make: String
+    model: String
+    color: String
     repairs: [Repair]
   }
 
@@ -57,8 +60,8 @@ const typeDefs = gql`
     updateUser(email: String, password: String): User
     login(email: String!, password: String!): Auth
     checkIn(cellPhone: String!): Customer
-    addCustomer(userId: ID!, firstName: String!, lastName: String!, cellPhone: String!): Auth
-    updateCustomer(firstName: String, lastName: String, cellPhone: String): Customer
+    addCustomer(userId: ID!, firstName: String!, lastName: String!, cellPhone: String!, make: String!, model: String!, color: String!): Auth
+    updateCustomer(firstName: String, lastName: String, cellPhone: String, make: String!, model: String!, color: String!): Customer
     addRepair(parts: [ID]!): Repair
     addPart(customerID: ID!, name: String!, description: String!, price: Float!, quantity: Int!): Part
     updatePart(_id: ID!, quantity: Int!): Part

@@ -26,6 +26,14 @@
     height: 80px;
   }
 
+  /* .mech:hover {
+    -webkit-transition: all 0.3s ease-in-out .2s;
+    -moz-transition: all 0.3s ease-in-out .2s;
+    transition: all 0.3s ease-in-out .2s;
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.125, 1.125);
+  } */
+
   .nav-options {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -46,6 +54,16 @@
   .option :hover {
     color: white;
   }
+
+  .option {
+    border-radius: 25px;
+    margin: 5px;
+    background: rgb(232, 232, 236);
+    padding-left: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+
   .signin-up {
     display: flex;
     padding: 0px 5px;

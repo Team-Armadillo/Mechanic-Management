@@ -9,7 +9,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar}) => {
                 <h1>mecanico</h1>
             </div>
             
-            <i className="fa fa-times" id="sidebarIcon" onClick={() => closeSidebar()}></i>
+           {/*  <i className="fa fa-times" id="sidebarIcon" onClick={() => closeSidebar()}></i>*/}
 
             <div className="sidebar-menu">
                 <div className="sidebar-links active-menu-link">
