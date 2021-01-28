@@ -29,7 +29,6 @@ function Dashlogin({props}) {
         });
       };
 
-
     return (
     <form className="adminform" onSubmit={handleFormSubmit}>
       
@@ -37,8 +36,6 @@ function Dashlogin({props}) {
            <h1>Mecanico</h1>
            <p className="lp">Admin Login</p>
 
-         
-           
            {(error !== "") ? (<div className="error">{error}</div>) : ""}
 
            <div className="form-group">

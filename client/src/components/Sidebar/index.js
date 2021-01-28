@@ -13,23 +13,23 @@ const Sidebar = ({ sidebarOpen, closeSidebar}) => {
 
             <div className="sidebar-menu">
                 <div className="sidebar-links active-menu-link">
-        
+                    <Link to='/t01ZUNtMmCdpJdMX71hI'>
+                        <i className="fa fa-clipboard">
+                        </i>Check-in
+                    </Link>
+                </div>
                     
-                <Link to='/Dashboard'> <i className="fa fa-clipboard"></i>Check-ins</Link>
-                    </div>
-                    
-                    <div className="sidebar-links">
-                   
-                    <Link to='/Patrons'><i className="fa fa-users"></i>Patrons</Link>
-                    </div>
+                <div className="sidebar-links">
+                   <Link to='/Customer'>
+                       <i className="fa fa-users">
+                        </i>Customers
+                    </Link>
+                </div>
 
-                    <div className="sidebar-links">
+                <div className="sidebar-links">
                     
-                    <a href="#"><i className="fa fa-sign-out"></i>Log out</a>
-                    </div>
-                    
-                
-
+                <a href="#"><i className="fa fa-sign-out"></i>Log out</a>
+                </div>
             </div>
         </div>
 

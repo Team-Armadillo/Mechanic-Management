@@ -179,7 +179,7 @@ const resolvers = {
               throw new AuthenticationError('Incorrect credentials');
             }
       
-            const correctPn = await customer.isCorrectPassword(cellPhone);
+            const correctPn = await (cellPhone);
       
             if (!correctPn) {
               throw new AuthenticationError('Incorrect credentials');

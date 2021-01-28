@@ -23,12 +23,20 @@ mutation addUser($email: String!, $password: String!) {
 `;
 
 export const CHECK = gql`
-  mutation login($cellPhone: String!) {
-    login(cellPhone: $cellPhone) {
-      customer {
-        _id
+  mutation checkIn($cellPhone: String!) {
+    checkIn(cellPhone: $cellPhone) {
+          repairs {
+          _id
+          purchaseDate
+            parts {
+            _id
+           name
+           description
+           price
+           quantity
+          }
+        }
       }
-    }
   }
 `;
 
@@ -48,12 +56,18 @@ export const ADD_REPAIR = gql`
 `;
 
 export const ADD_CUSTOMER = gql`
-  mutation addCustomer($userId: ID!, $firstName: String!, $lastName: String!, $cellPhone: String!, $make: String!, $model: String!, $color: String!) {
-    addCustomer(firstName: $firstName, lastName: $lastName, email: $email, password: $password) {
-      token
-      user {
+mutation addCustomer($firstName: String!, $lastName: String!, $cellPhone: String!, $make: String!, $model: String!, $color: String!) {
+  addCustomer(firstName: $firstName, lastName: $lastName, cellPhone: $cellPhone, make: $make, model: $model, color: $color) {
+    token
+    customer {
         _id
-      }
+        firstName
+        lastName
+        cellPhone
+        make
+        model
+        color
     }
   }
+}
 `;

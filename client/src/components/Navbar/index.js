@@ -27,13 +27,13 @@ const Header = () => {
         </div>
         <ul className={click ? "nav-options active" : "nav-options"}>
           <li className="option" onClick={closeMobileMenu}>
-            <Link to="../pages/Services">Services</Link>
+            <Link to="/Services">Services</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <Link to="../pages/About">About</Link>
+            <Link to="/About">About</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-           <Link to="../pages/contact">Contact</Link>
+           <Link to="/Contact">Contact</Link>
           </li>
         </ul>
       </div>

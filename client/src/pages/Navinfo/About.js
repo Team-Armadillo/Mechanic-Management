@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { ReactComponent as Logo } from "../assets/logo.svg";
-import Navbar from "../components/Navbar";
-import "../components/Body";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
+import Navbar from "../../components/Navbar";
+import "../../components/Body";
 
 const About = () => {
     return (

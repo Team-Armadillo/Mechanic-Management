@@ -18,6 +18,21 @@ const customerSchema = new Schema({
     required: true,
     trim: true, 
   },
+  make: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  model: {
+    type: String,
+    required: true,
+    trim: true, 
+  },
+  color: {
+    type: String,
+    required: true,
+    trim: true, 
+  },
   repair: {
     type: Number,
     trim: true, 
