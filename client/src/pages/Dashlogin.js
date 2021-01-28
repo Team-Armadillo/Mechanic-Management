@@ -32,12 +32,12 @@ function Dashlogin({props}) {
 
     return (
     <form className="adminform" onSubmit={handleFormSubmit}>
-      <Link to="/KuceCU3bbD3EmURTEwty">
-          ← Go to Sign-Up
-        </Link>
+      
         <div className= "form-inner">
            <h1>Mecanico</h1>
            <p className="lp">Admin Login</p>
+
+         
            
            {(error !== "") ? (<div className="error">{error}</div>) : ""}
 
@@ -69,7 +69,12 @@ function Dashlogin({props}) {
             <p className="error-text" >The provided credentials are incorrect</p>
           </div> : null
           }
+          
         <LoginBtn/>
+
+        <Link className= "btn" to="/KuceCU3bbD3EmURTEwty">
+          Sign-Up
+        </Link>
         </div>
     </form>
     )
