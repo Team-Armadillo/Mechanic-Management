@@ -1,11 +1,11 @@
 .btn {
     margin-top: 20px !important;
     padding: 5px 60px 5px 60px !important;
-    border: solid 2px var(--text-color);
+    border: solid 2px #6C6DBA;
     background-color: transparent;
     font-size: 14px;
     font-weight: bold;
-    color: var(--text-color);
+    color: #6C6DBA;
     border-radius: 6px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -13,7 +13,8 @@
 
 .btn:hover{
     background-color: var(--text-color);
-    color: var(--bg-color-secondary);
+    color: #6C6DBA;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    border: solid 2px #fff;
 }

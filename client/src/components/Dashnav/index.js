@@ -8,7 +8,7 @@ const Dashnav = ({ sidebarOpen, closeSidebar, openSidebar}) => {
                 <i className="fa fa-bars"></i>
             </div>
             <div className="dashnav-left">
-                <i className="fa fa-search"></i>
+
             </div>
             
         </nav>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
 const Sidebar = ({ sidebarOpen, closeSidebar}) => {
@@ -8,23 +9,27 @@ const Sidebar = ({ sidebarOpen, closeSidebar}) => {
                 <h1>mecanico</h1>
             </div>
             
-            <i className="fa fa-times" id="sidebarIcon" onClick={() => closeSidebar()}></i>
+           {/*  <i className="fa fa-times" id="sidebarIcon" onClick={() => closeSidebar()}></i>*/}
 
             <div className="sidebar-menu">
                 <div className="sidebar-links active-menu-link">
-                    <i className="fa fa-clipboard"></i>
-                    <a href="#">Check-ins</a>
-                </div>
+        
                     
-                <div className="sidebar-links">
-                    <i className="fa fa-users"></i>
-                    <a href="#">Patrons</a>
-                </div>
+                <Link to='/Dashboard'> <i className="fa fa-clipboard"></i>Check-ins</Link>
+                    </div>
+                    
+                    <div className="sidebar-links">
+                   
+                    <Link to='/Patrons'><i className="fa fa-users"></i>Patrons</Link>
+                    </div>
 
-                <div className="sidebar-links">
-                    <i className="fa fa-sign-out"></i>
-                    <a href="#">Log out</a>
-                </div>
+                    <div className="sidebar-links">
+                    
+                    <a href="#"><i className="fa fa-sign-out"></i>Log out</a>
+                    </div>
+                    
+                
+
             </div>
         </div>
 

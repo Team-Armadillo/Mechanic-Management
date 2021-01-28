@@ -5,8 +5,7 @@
     align-items:center;
     justify-content: space-between;
     padding: 0 30px 0 30px;
-    border-bottom: 1px solid #c9c9c9;
-    box-shadow: 2px 2px 4px #dadada, -2px -2px 5px #ffffff;
+    background-color: rgba(255, 255, 255, 0.268);
 }
 
 .nav_icon {
