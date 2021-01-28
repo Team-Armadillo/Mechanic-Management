@@ -7,10 +7,25 @@
 
   > EX: This PWA if Offline, will [POST](https://www.w3schools.com/tags/ref_httpmethods.asp) the new data inputed by the user once the Application gets online to ensure it reaches the MongoDB.
 
-  > Deployed Aplication > 
+  ## Deployed Aplication 
+  
   
   ## User Story
 As someone who owns a vehicle, I want a website where I can easily check in and check out my vehicle at the mechanic workshop.
+
+GIVEN a website<br />
+WHEN I visit the site for the first time<br />
+THEN I’m presented with the homepage, which includes options to Sign Up (Create a Profile) or Log In<br />
+WHEN I choose to Sign Up, I am prompted to enter username and Password<br />
+THEN I can enter my vehicle information <br />
+WHEN I revisit the site at a later time, i can check out my vehicle and pay invoice<br />
+
+
+## Features
+* Users have the ability to create an account and login with it.
+* The account keeps track of their vehicle in the mechanic workshop.
+* Users are only able to edit their individual information.
+* Users can pay invoice, leave a review or both at the end.
   
   ## Table of contents
   
