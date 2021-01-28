@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useMutation } from '@apollo/react-hooks';
 import LoginBtn from '../components/loginBtn';
+import { Link } from "react-router-dom";
 import { LOGIN } from "../utils/mutations"
 import Auth from "../utils/auth";
 import "../components/LoginForm/LoginForm.css"
@@ -31,9 +32,12 @@ function Dashlogin({props}) {
 
     return (
     <form className="adminform" onSubmit={handleFormSubmit}>
+      <Link to="/KuceCU3bbD3EmURTEwty">
+          ← Go to Sign-Up
+        </Link>
         <div className= "form-inner">
            <h1>Mecanico</h1>
-           <p className="lp">Admin Dashboard</p>
+           <p className="lp">Admin Login</p>
            
            {(error !== "") ? (<div className="error">{error}</div>) : ""}
 
@@ -64,7 +68,7 @@ function Dashlogin({props}) {
           error ? <div>
             <p className="error-text" >The provided credentials are incorrect</p>
           </div> : null
-        }
+          }
         <LoginBtn/>
         </div>
     </form>
