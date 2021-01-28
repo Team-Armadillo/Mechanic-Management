@@ -9,6 +9,9 @@
 
   > Deployed Aplication > 
   
+  ## User Story
+As someone who owns a vehicle, I want a website where I can easily check in and check out my vehicle at the mechanic workshop.
+  
   ## Table of contents
   
   - [Installation](#installation)
@@ -51,5 +54,4 @@ Example:
   - [Email] (b.mccoolpierce@gmail.com)
   - [Email] (adaobi.okoye@ttuhsc.edu)
 
-# Mechanic-Management
 
