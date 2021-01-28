@@ -1,41 +1,28 @@
 import gql from "graphql-tag";
 
-export const QUERY_PRODUCTS = gql`
-  query getProducts($category: ID) {
-    products(category: $category) {
+export const QUERY_PARTS = gql`
+  query getParts($customer: ID) {
+    parts(customer: $customer) {
       _id
       name
       description
       price
       quantity
-      image
-      category {
+      customer {
         _id
       }
     }
   }
 `;
 
-export const QUERY_ALL_PRODUCTS = gql`
+export const QUERY_ALL_PARTS = gql`
   {
-    products {
+    parts {
       _id
       name
       description
       price
       quantity
-      category {
-        name
-      }
-    }
-  }
-`;
-
-export const QUERY_CATEGORIES = gql`
-  {
-    categories {
-      _id
-      name
     }
   }
 `;
@@ -43,27 +30,54 @@ export const QUERY_CATEGORIES = gql`
 export const QUERY_USER = gql`
   {
     user {
-      firstName
-      lastName
-      orders {
+      email
+      savedCustomers {
         _id
-        purchaseDate
-        products {
+        firstName
+        lastName
+        cellPhone
+        make
+        model
+        color
+        repairs {
           _id
-          name
-          description
-          price
-          quantity
-          image
+          purchaseDate
+          parts {
+            _id
+            name
+            description
+            price
+            quantity
+          }
         }
       }
     }
   }
 `;
 
+export const QUERY_CUSTOMER = gql`
+{
+customer {
+  cellPhone
+  repairs {
+    _id
+    purchaseDate
+      parts {
+        _id
+        name
+        description
+        price
+        quantity
+      }
+    }
+  }
+}
+`;
+
+
 export const QUERY_CHECKOUT = gql`
-  query getCheckout($products: [ID]!) {
-    checkout(products: $products) {
+  query getCheckout($parts: [ID]!) {
+    checkout(parts: $parts) {
       session
     }
   }

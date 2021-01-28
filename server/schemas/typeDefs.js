@@ -47,9 +47,9 @@ const typeDefs = gql`
   }
 
   type Query {
-    user: [User]
-    customer: [Customer]
-    parts(name: String): [Part]
+    user: User
+    customer: Customer
+    parts(customer: ID, name: String): [Part]
     repair(_id: ID!): Repair
     part(_id: ID!): Part
     checkout(parts: [ID]!): Checkout
@@ -66,7 +66,6 @@ const typeDefs = gql`
     addPart(customerID: ID!, name: String!, description: String!, price: Float!, quantity: Int!): Part
     updatePart(_id: ID!, quantity: Int!): Part
   }
-
 `;
 
 // export the typeDefs
