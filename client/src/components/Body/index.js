@@ -1,6 +1,7 @@
 import React from 'react'
-import "./Body.scss"
+import "./Body.css"
 import Navbar from "../Navbar";
+import CustomerForm from "../CustomerForm";
 import Footer from "../Footer"
 
 const Body = () => {
@@ -13,13 +14,9 @@ const Body = () => {
                 <h2 className="section-head-2">Checking Your Vehicle's Status?</h2>
                 <div className = "paraContainer">
                     <p className="paraText">
-                       <i> It's a Click Away. </i>
+                       <i>A Phone Number and a Click Away. </i>
                     </p>
-                    <div className="btnContainer">
-                        <button className="checkBtn">
-                           <p>Check Status!</p>
-                        </button>
-                    </div>
+                    <CustomerForm />
                 </div>
             </div>
             {/* <Footer />  */}

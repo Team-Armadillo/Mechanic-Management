@@ -26,7 +26,9 @@ input:focus {
   }
 
     
-
+.lt::placeholder {
+  color: rgba(240, 240, 240, 0.815);
+}
 
 .form-group input {
     width: 90%;
@@ -39,7 +41,6 @@ input:focus {
     color: var(--text-color);
     background: transparent;
     transition: all 0.3s ease-in-out;
-  
 }
 
 
@@ -66,7 +67,7 @@ input:focus {
 }
 
 
-form p {
+.lp {
     color: var(--text-secondary);
 }
 
