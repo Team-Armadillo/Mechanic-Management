@@ -74,7 +74,6 @@ customer {
 }
 `;
 
-
 export const QUERY_CHECKOUT = gql`
   query getCheckout($parts: [ID]!) {
     checkout(parts: $parts) {

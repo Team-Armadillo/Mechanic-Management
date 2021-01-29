@@ -4,8 +4,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
-
-// import { Provider } from "react-redux";
+import { StoreProvider } from "./utils/GlobalState";
 
 // Re-Use for possible new logo
 
@@ -18,7 +17,7 @@ import About from "./pages/Navinfo/About"
 import Contact from "./pages/Navinfo/Contact"
 import Services from "./pages/Navinfo/Services"
 import DashSign from "./pages/DashSign"
-
+// import Checkstatus from "./pages/Checkstatus"
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -37,7 +36,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-        {/* <Provider store={store}> */}
+        <StoreProvider>
             {/* <Nav /> */}
             <Switch>
               <Route exact path='/' component={Home} />
@@ -45,7 +44,7 @@ function App() {
               <Route exact path="/Services" component={Services} />
               <Route exact path="/Contact" component={Contact} />
 
-             {/* <Route exact path="/pages/Status" component={Status} />*/}
+             {/* {<Route exact path="/pages/Checkstatus" component={Checkstatus} />} */}
               <Route exact path='/f9MecEJ2vtKaYM3rEh48' component= {Dashlogin} />
               <Route exact path='/t01ZUNtMmCdpJdMX71hI' component= {Dashboard} />
               <Route exact path='/KuceCU3bbD3EmURTEwty' component= {DashSign} />
@@ -55,7 +54,7 @@ function App() {
               <Route exact path="/products/:id" component={Detail} /> */}
               {/* <Route component={NoMatch} /> */}
             </Switch>
-            {/* </Provider> */}
+            </StoreProvider>
         </div>
       </Router>
     </ApolloProvider>

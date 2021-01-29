@@ -13,7 +13,6 @@ const StoreProvider = ({ value = [], ...props }) => {
   const [state, dispatch] = useProductReducer({
     customers: [],
     parts: [],
-    cartOpen: false,
     currentStatus: "",
   });
   // use this to confirm it works!

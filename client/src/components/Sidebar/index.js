@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
+import Auth from "../../utils/auth";
 
 const Sidebar = ({ sidebarOpen, closeSidebar}) => {
     return (
         <div className= {sidebarOpen ? "sidebar-responsive" : ""}id="sidebar">
             <div className="brand">
-                <h1>mecanico</h1>
+                <h1>Admin Dashboard</h1>
             </div>
             
            {/*  <i className="fa fa-times" id="sidebarIcon" onClick={() => closeSidebar()}></i>*/}
@@ -28,7 +29,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar}) => {
 
                 <div className="sidebar-links">
                     
-                <a href="#"><i className="fa fa-sign-out"></i>Log out</a>
+                <a href="/" onClick={() => Auth.logout()}><i className="fa fa-sign-out"></i>Log out</a>
                 </div>
             </div>
         </div>
