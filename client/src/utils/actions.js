@@ -7,6 +7,7 @@ export const UPDATE_CURRENT_STATUS = "UPDATE_CURRENT_STATUS";
 
 // Invoice/Part "technically adding to a cart" variables
 // Customers will get an invoice "PDF file" before the checkout process in Stripe
+export const ADD_TO_CART = "ADD_TO_CART";
 export const ADD_PART = "ADD_PART";
 export const ADD_REPAIR = "ADD_REPAIR";
 export const UPDATE_PART = "UPDATE_PART";

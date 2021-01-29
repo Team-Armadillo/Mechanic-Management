@@ -55,6 +55,7 @@ Example:
 - Javascript
 - HTML/CSS
 - Node.js
+- React
   
   ## License
   This Project is licensed via MIT

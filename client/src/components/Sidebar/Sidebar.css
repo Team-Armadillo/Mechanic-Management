@@ -29,6 +29,7 @@
 .sidebar-links {
     padding: 13px !important;
     transition: all 0.3s ease-in-out;
+    font-size: 18px;
     
 }
 
