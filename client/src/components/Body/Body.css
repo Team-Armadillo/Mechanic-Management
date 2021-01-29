@@ -16,14 +16,16 @@ body {
 .bodyContainer {
     background: url(../../assets/opt.svg) no-repeat center top;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     filter: drop-shadow(.5px 3px 3.8px rgba(0, 0, 0, 1));
+    overflow: hidden;
 }
 
 .bodyText {
     margin: 12% 20%;
     color: rgba(255, 255, 255, 0.932);
-    text-align: center;
+    text-align: center; 
+    overflow:auto;   
 }
 
 .paraContainer {
@@ -34,7 +36,7 @@ body {
     font-size: calc(20px + .5vw);
     font-weight: 500;
     margin-top: 15px;
-    pointer-events: none;
+    /* pointer-events: none; REMOVED TO ALLOW CLICK TO CALL AND CLICK TO EMAIL*/
 }
 
 .section-head {
@@ -59,7 +61,14 @@ body {
     margin-top: 6rem;
 }
 
-/*Mobile VIew */
+body::-webkit-scrollbar {
+    display: none;
+
+  }
+  .bodyText::-webkit-scrollbar {
+    display: none;
+  }
+/*Mobile View */
 @media (max-width:648px) {
 
 .bodyText {
@@ -68,13 +77,9 @@ body {
     overflow:auto; 
     /* border: 2px solid red; */
     padding-bottom: 10%;
-
+    margin: 0;
 }
-/* .paraContainer{
-    
-    overflow: auto;
-    height: 100%;
-    box-sizing: content-box; */
+
 
 .bodyText::-webkit-scrollbar {
     display: none;
@@ -82,8 +87,10 @@ body {
 
 .paraContainer{
     padding: 10px;
-}
-.section-head-2{
     
 }
+.section-head-2{
+width: 100%;
+}
+
 }

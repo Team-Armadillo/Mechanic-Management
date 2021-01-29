@@ -72,3 +72,14 @@ button {
     border-radius: 20px;
     font-size: calc(16px + .4vw);
 }
+// Mobile View
+@media (max-width: 648px) {
+
+
+.formContainer{
+  width: 90%;
+  margin:auto;
+
+}
+
+}
