@@ -63,7 +63,7 @@ const typeDefs = gql`
     addCustomer(firstName: String!, lastName: String!, cellPhone: String!, make: String!, model: String!, color: String!): Auth
     updateCustomer(firstName: String, lastName: String, cellPhone: String, make: String!, model: String!, color: String!): Customer
     addRepair(parts: [ID]!): Repair
-    addPart(customerID: ID!, name: String!, description: String!, price: Float!, quantity: Int!): Part
+    addPart(name: String!, description: String!, price: Float!, quantity: Int!): Part
     updatePart(_id: ID!, quantity: Int!): Part
   }
 `;

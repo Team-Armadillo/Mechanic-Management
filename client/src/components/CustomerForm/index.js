@@ -13,6 +13,10 @@ function CustomerForm(props) {
         event.preventDefault();
         try {
           const mutationResponse = await checkIn({ variables: { cellPhone: formState.cellPhone} })
+          const token = mutationResponse.data.checkIn.token;
+          let phonenumber = document.querySelector("#cellPhone").value;
+          localStorage.setItem('cellPhone', phonenumber);
+          Auth.checkIn(token);
         } catch (e) {
           console.log(e)
         }
@@ -31,7 +35,7 @@ function CustomerForm(props) {
         <form className="formContainer" onSubmit={handleFormSubmit}>
             <div className="formText">
                 <input
-                    placeholder="Ex: xxx-xxx-xxxx"
+                    placeholder="Ex: 123-456-7890"
                     name="cellPhone"
                     className="cellInput"
                     type="text"

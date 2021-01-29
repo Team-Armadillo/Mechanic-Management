@@ -34,6 +34,10 @@ class AuthService {
     window.location.assign('/t01ZUNtMmCdpJdMX71hI');
   }
 
+  checkIn() {
+    window.location.assign('/CheckStatus');
+  }
+
   logout() {
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');

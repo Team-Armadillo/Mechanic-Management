@@ -17,7 +17,7 @@ import About from "./pages/Navinfo/About"
 import Contact from "./pages/Navinfo/Contact"
 import Services from "./pages/Navinfo/Services"
 import DashSign from "./pages/DashSign"
-// import Checkstatus from "./pages/Checkstatus"
+import CheckStatus from "./pages/Checkstatus"
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -43,8 +43,7 @@ function App() {
               <Route exact path='/About' component={About} />
               <Route exact path="/Services" component={Services} />
               <Route exact path="/Contact" component={Contact} />
-
-             {/* {<Route exact path="/pages/Checkstatus" component={Checkstatus} />} */}
+              <Route exact path="/CheckStatus" component={CheckStatus} /> 
               <Route exact path='/f9MecEJ2vtKaYM3rEh48' component= {Dashlogin} />
               <Route exact path='/t01ZUNtMmCdpJdMX71hI' component= {Dashboard} />
               <Route exact path='/KuceCU3bbD3EmURTEwty' component= {DashSign} />
