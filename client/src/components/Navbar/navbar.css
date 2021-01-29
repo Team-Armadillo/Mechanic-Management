@@ -115,6 +115,9 @@
     .logo {
       width: 45px;
       height: 45px;
+      position:relative;
+      right: 200%;
+      
     }
 
     .nav-options {
@@ -143,6 +146,7 @@
       width: 45px;
       height: 45px;
       opacity: 100%;
+      margin: 10px;
     }
     .option {
       display: flex;

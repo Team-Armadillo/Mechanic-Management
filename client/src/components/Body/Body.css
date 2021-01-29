@@ -58,3 +58,32 @@ body {
     margin-right: 1.2rem;
     margin-top: 6rem;
 }
+
+/*Mobile VIew */
+@media (max-width:648px) {
+
+.bodyText {
+    /* height:auto; */
+    height:85%;
+    overflow:auto; 
+    /* border: 2px solid red; */
+    padding-bottom: 10%;
+
+}
+/* .paraContainer{
+    
+    overflow: auto;
+    height: 100%;
+    box-sizing: content-box; */
+
+.bodyText::-webkit-scrollbar {
+    display: none;
+  }
+
+.paraContainer{
+    padding: 10px;
+}
+.section-head-2{
+    
+}
+}
