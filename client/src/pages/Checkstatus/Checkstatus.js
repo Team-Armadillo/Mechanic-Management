@@ -24,6 +24,7 @@ function checkstatus () {
           <div className="flex-row">
             {repair.parts.map(({ _id, name, price }, index) => (
               <div key={index} className="card px-1 py-1">
+                  <i>{_id}</i>
                   <p>{name}</p><hr />
                   <p>{description}</p><hr />
                   <p>{quantity}</p><hr />
