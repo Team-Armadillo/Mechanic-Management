@@ -53,7 +53,7 @@ Example:
   
   ## Technologies
 - Javascript
-- HTML/CSS
+- HTML/CSS/SCSS
 - Node.js
 - React
   
