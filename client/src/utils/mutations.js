@@ -42,7 +42,7 @@ export const CHECK = gql`
 
 export const ADD_REPAIR = gql`
   mutation addRepair($parts: [ID]!) {
-    addRepair(parts: $products) {
+    addRepair(parts: $parts) {
       purchaseDate
       parts {
         _id
@@ -50,6 +50,20 @@ export const ADD_REPAIR = gql`
       description
       price
       quantity
+      }
+    }
+  }
+`;
+
+export const ADD_PART = gql`
+  mutation addPart($repairs: [ID]!) {
+    addPart(repairs: $repairs) {
+      parts {
+        _id
+        name
+        description
+        price
+        quantity
       }
     }
   }

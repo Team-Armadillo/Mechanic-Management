@@ -18,22 +18,23 @@ export const reducer = (state, action) => {
         ...state,
         products: [...action.parts],
     };
+
     case UPDATE_CURRENT_STATUS:
       return {
         ...state,
         currentStatus: action.currentStatus,
-      };
+    };
 
       case REMOVE_PART:
       let newState = state.cart.filter((part) => {
         return part._id !== action._id;
-      });
+    });
 
       return {
         ...state,
         cartOpen: newState.length > 0,
         cart: newState,
-      };
+    };
 
     case UPDATE_PART_QUANTITY:
       return {
@@ -45,7 +46,7 @@ export const reducer = (state, action) => {
           }
           return part;
         }),
-      };
+    };
 
     default:
       return state;
