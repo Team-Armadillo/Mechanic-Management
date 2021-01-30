@@ -11,14 +11,15 @@ body {
     background: url(../../assets/head.svg) no-repeat center top;
     background-size: cover;
     transition: all .4s;
+    height:100vh;
 }
 
 .bodyContainer {
     background: url(../../assets/opt.svg) no-repeat center top;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     filter: drop-shadow(.5px 3px 3.8px rgba(0, 0, 0, 1));
-    overflow: hidden;
+    /* overflow: auto; */
 }
 
 .bodyText {
@@ -67,7 +68,9 @@ body::-webkit-scrollbar {
   }
   .bodyText::-webkit-scrollbar {
     display: none;
+    
   }
+ 
 /*Mobile View */
 @media (max-width:648px) {
 
