@@ -16,12 +16,12 @@
   ## User Story & Acceptance Criteria
 As someone who owns a vehicle, I want a website where I can easily check in and check out my vehicle at the mechanic workshop.
 
-GIVEN I am a customer needing to check in my vehicle >
-WHEN I visit the site >
-THEN I’ am able to check in my vehicle with my phone number >
-WHEN I choose to Sign Up, I am prompted to enter username and Password >
-THEN I can enter my vehicle information >
-WHEN I revisit the site at a later time, I can check out my vehicle and pay invoice >
+GIVEN I am a customer needing to check in my vehicle<br />
+WHEN I visit the site<br />
+THEN I’ am able to check in my vehicle with my phone number<br />
+WHEN I choose to Sign Up, I am prompted to enter username and Password<br />
+THEN I can enter my vehicle information<br />
+WHEN I revisit the site at a later time, I can check out my vehicle and pay invoice
 
 
 ## Features
