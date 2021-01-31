@@ -8,6 +8,8 @@
   > EX: This PWA if Offline, will [POST](https://www.w3schools.com/tags/ref_httpmethods.asp) the new data inputed by the user once the Application gets online to ensure it reaches the MongoDB.
 
   ## Deployed Aplication 
+  https://evening-crag-23670.herokuapp.com/
+
   
   ## Presentation
   https://docs.google.com/presentation/d/14Ky2wiAuDDvoZoTwBWPWGqHeeWY-nvwV9Y86uGfNxhQ/edit#slide=id.gb57de7ebfe_0_50
